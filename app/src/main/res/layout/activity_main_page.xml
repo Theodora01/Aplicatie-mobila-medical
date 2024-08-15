@@ -1,0 +1,395 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainPage">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/alpha"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/coordinatorMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewUpMain"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/white"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageButton
+                    android:id="@+id/btnSideBar"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/open_sidebar"
+                    android:onClick="openSidebar"
+                    android:src="@drawable/iconprofile" />
+
+                <TextView
+                    android:id="@+id/tvHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@color/alpha"
+                    android:text="@string/hello"
+                    android:textColor="#2c3f3d"
+                    android:textSize="23sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvNameMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/alpha"
+                    android:textColor="#2c3f3d"
+                    android:textSize="23sp"
+                    android:textStyle="normal" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="35dp"
+                android:backgroundTint="#Defacd"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/alpha"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/alpha"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/let_us_take_care_of"
+                            android:textColor="#2c3f3d"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/your_health"
+                            android:textColor="#2c3f3d"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/btnBookNow"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/rounded_background"
+                            android:backgroundTint="#92e3a9"
+                            android:contentDescription="@string/book_now_btn"
+                            android:paddingTop="10dp"
+                            android:text="@string/schedule_yourself_btn"
+                            android:textAlignment="center"
+                            android:textColor="#2c3f3d"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/medical"
+                        tools:ignore="contentDescription" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tvIntrebare"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginEnd="35dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/what_do_you_need_today"
+                android:textAlignment="textStart"
+                android:textColor="#2c3f3d"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <GridLayout
+                android:id="@+id/gridLayoutMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="2"
+                android:rowCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/doctorsCardView"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#F6e9c5"
+                    android:onClick="btnDoctors"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/icondoctor"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/doctors"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/analizeCardView"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#Cef6c5"
+                    android:onClick="btnAnalize"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/iconanalize"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/news_main"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/istoricCardView"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="#C5f6eb"
+                    android:onClick="btnIstoric"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/iconistoric"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/historic"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/consultatieOnlineCardView"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="#F0ddef"
+                    android:onClick="btnConsultatieOnline"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="95dp"
+                            android:src="@drawable/iconconsultatieonline"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/online_consultation"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/alpha"
+            android:backgroundTint="@color/alpha"
+            app:layout_constraintBottom_toTopOf="@+id/coordinatorMain"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorMain"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/alpha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                style="@style/BottomAppBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/alpha"
+                app:fabCradleMargin="20dp"
+                app:fabCradleRoundedCornerRadius="12dp"
+                app:itemBackground="@drawable/bottom_nav_item_color">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navBottomView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/green6"
+                    android:backgroundTint="@color/green6"
+                    android:elevation="16dp"
+                    app:itemActiveIndicatorStyle="@drawable/bottom_nav_item_color"
+                    app:itemBackground="@drawable/bottom_nav_item_color"
+                    app:itemIconTint="@color/greenLight"
+                    app:itemTextColor="@color/gray1"
+                    app:labelVisibilityMode="selected"
+                    app:menu="@menu/bottom_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/nav_header"
+        android:backgroundTint="@color/white"
+        app:menu="@menu/sidebar_menu"
+        app:itemIconTint="@color/green3"
+        app:itemTextColor="@color/colorText"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

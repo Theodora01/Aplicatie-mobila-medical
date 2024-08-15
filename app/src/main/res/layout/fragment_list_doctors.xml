@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameListDoctor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ListDoctorsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/alpha">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/alpha">
+
+            <TextView
+                android:id="@+id/tvListDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:text="Doctor List"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="29sp"
+                android:textStyle="normal"
+                android:drawableStart="@drawable/list"/>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDoctorFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDoctor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/doctor"
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorText" />
+
+                <TextView
+                    android:id="@+id/tvFavorite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Favorite"
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorText"
+                    android:onClick="btnFavorite"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCategorii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/alpha"
+            android:backgroundTint="@color/alpha" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDoctori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:background="@color/alpha"
+            android:backgroundTint="@color/alpha"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSharedPref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@color/alpha"
+            android:backgroundTint="@color/alpha"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutProfileDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ListDoctorsFragment"/>
+
+</FrameLayout>

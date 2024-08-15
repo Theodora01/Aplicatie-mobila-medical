@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#C0EDC2</color>
+    <color name="green1">#8CCD8F</color>
+    <color name="green2">#98DF9B</color>
+    <color name="green3">#104712</color>
+    <color name="green4">#80BD81</color>
+    <color name="green5">#4E7C50</color>
+    <color name="alpha">#02C9E3CA</color>
+    <color name="gray">#EBECEA</color>
+    <color name="gray1">#939592</color>
+    <color name="greenLight">#37B13C</color>
+    <color name="fundal">#D7F3D8</color>
+    <color name="green6">#F0F8F0</color>
+    <color name="colorText">#2d4334</color>
+    <color name="colorText1">#326142</color>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btnBackFragmSettings"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/iconbackmain"
+            android:contentDescription="@string/settings"
+            android:onClick="backToSideBarSettings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsFragm"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray1"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.398"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.061" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.586">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_manage_accounts_24"
+                android:drawablePadding="14dp"
+                android:padding="15sp"
+                android:text="@string/account"
+                android:textSize="22sp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/green3" />
+
+            <TextView
+                android:id="@+id/btnchangePassSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15sp"
+                android:paddingStart="30sp"
+                android:text="@string/change_password"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/btnEditSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="17sp"
+                android:paddingStart="30sp"
+                android:text="@string/profile_information"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_notifications_none_24"
+                android:drawablePadding="14sp"
+                android:padding="17sp"
+                android:text="@string/notifications"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/green3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:padding="17dp"
+                    android:paddingStart="30sp"
+                    android:text="@string/app_notification"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorText"/>
+
+                <CheckBox
+                    android:id="@+id/myCheckBox"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_add_circle_outline_24"
+                android:drawablePadding="14dp"
+                android:padding="17dp"
+                android:text="@string/more"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/green3"
+                android:backgroundTint="@color/green3"
+                android:foregroundTint="#393636" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingStart="30sp"
+                android:text="@string/_0763156651Settings"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:paddingStart="30sp"
+                android:text="@string/emailSettings"
+                android:textSize="20sp"
+                android:textColor="@color/colorText"/>
+
+            <Button
+                android:id="@+id/btnLogoutSettings"
+                android:layout_width="190dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rounded_background"
+                android:elevation="20dp"
+                android:padding="10sp"
+                android:text="@string/logoutSettings"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.968" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

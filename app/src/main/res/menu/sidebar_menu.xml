@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_1"
+        android:title=""
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/menu_item_home"
+                android:icon="@drawable/baseline_dashboard_24"
+                android:title="@string/dashboard"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/menu_item_profile"
+                android:icon="@drawable/iconprofilegray"
+                android:title="@string/profile_sidebar" />
+
+            <item
+                android:id="@+id/menu_item_settings"
+                android:icon="@drawable/baseline_settings_24"
+                android:title="@string/settings" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/menu_item_2"
+        android:title="@string/communicate"
+        android:visible="true"
+        android:iconTint="@color/green3">
+        <menu>
+            <item
+                android:id="@+id/menu_item_mobile"
+                android:icon="@drawable/baseline_phone_24"
+                android:title="@string/_0763156651" />
+            <item
+                android:id="@+id/menu_item_mail"
+                android:icon="@drawable/baseline_email_24"
+                android:title="@string/medical_connect_gmail_com" />
+
+        </menu>
+    </item>
+
+    <item android:title=""
+          android:id="@+id/menu_item_3">
+        <menu>
+            <item
+                android:id="@+id/menu_item_logout"
+                android:title="@string/logout"
+                android:icon="@drawable/baseline_logout_24">
+            </item>
+        </menu>
+
+    </item>
+
+
+</menu>

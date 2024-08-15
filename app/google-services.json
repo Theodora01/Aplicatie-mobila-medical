@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "85046011650",
+    "firebase_url": "https://aplicatiemedicala-9ffd7-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "aplicatiemedicala-9ffd7",
+    "storage_bucket": "aplicatiemedicala-9ffd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85046011650:android:ed101eb7d98b9fbb82c41b",
+        "android_client_info": {
+          "package_name": "com.example.aplicatiemedicala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5o5VRd_unRLoFEh2h7RSimljbalmRFzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

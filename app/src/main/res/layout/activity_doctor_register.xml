@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DoctorRegister">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:elevation="15dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RegisterDoctor"
+                android:textAlignment="center"
+                android:textColor="#2d4334"
+                android:layout_marginBottom="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints="name"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="14dp"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/specializareRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="14dp"
+                android:hint="Specializare"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mobileRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="phone"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="14dp"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenderMedic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtnFemaleDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_female_24"
+                    android:padding="7sp"
+                    android:text="@string/female"
+                    android:textColor="#2d4334"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnMaleDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:drawableStart="@drawable/baseline_male_24"
+                    android:padding="7sp"
+                    android:text="@string/male"
+                    android:textColor="#2d4334"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/steleRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="password"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_star_border_24"
+                android:drawablePadding="14dp"
+                android:hint="Stele"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/gray1"
+                android:textColorHint="@color/gray1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/orarLucruRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingStart="50dp"
+                android:hint="Orar lucru"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/tarfifConsultatieRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingStart="50dp"
+                android:hint="Tarif Consultatie"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/tarifControlLucruRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingStart="50dp"
+                android:hint="Tarif Control"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/experientaRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingStart="50dp"
+                android:hint="Experienta"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColorHint="@color/gray1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btnRegisterDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/custom_edit"
+                android:backgroundTint="#97e1ad"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileDoctorFragment"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProfile1"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btnBackProfileDoctor"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/iconbackmain"
+                android:contentDescription="@string/edit_profile"
+                android:onClick="backToListDoctor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.069" />
+
+            <ImageView
+                android:id="@+id/imageProfileDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="70dp"
+                android:backgroundTint="#FFFFFF"
+                tools:ignore="ContentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProfile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            tools:layout_editor_absoluteX="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Marasteanu Theodora"
+                    android:paddingTop="2dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText1"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvSpecializare"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="3dp"
+                        android:paddingStart="20dp"
+                        android:text="@string/specialization"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/specializareDoctor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="2dp"
+                        android:text="Ginecologie"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvExperienta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/experience"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/tvExperientaDoctor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="2dp"
+                        android:text="4"
+                        android:layout_marginStart="50dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="23sp" />
+                    <TextView
+                        android:id="@+id/tvYears"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="2dp"
+                        android:text="years "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="23sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="45dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/iconstarprofile" />
+
+                    <TextView
+                        android:id="@+id/steleDoctor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:paddingTop="2dp"
+                        android:text="4.5"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="23sp" />
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="#F6ec9f"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvConsultatie"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/consultation"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvPretConsultatie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingStart="30dp"
+                            android:paddingTop="4dp"
+                            android:text="100"
+                            android:textColor="@color/gray1"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/tvMonedaConsultatie"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingTop="4dp"
+                            android:text="EUR"
+                            android:textColor="@color/gray1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="#F6ec9f"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvControl"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/control"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvPretControl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingStart="30dp"
+                            android:paddingTop="4dp"
+                            android:text="150"
+                            android:textColor="@color/gray1"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/tvMonedaControl"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:paddingStart="20dp"
+                            android:paddingTop="4dp"
+                            android:text="EUR"
+                            android:textColor="@color/gray1"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnProfileDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/schedule_now"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPageConsultation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConsultatieFizicFragment" />
+
+</FrameLayout>

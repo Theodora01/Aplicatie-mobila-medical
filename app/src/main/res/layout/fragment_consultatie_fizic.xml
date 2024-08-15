@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ConsultatieFizicFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAppointemntFizic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/alpha">
+
+            <TextView
+                android:id="@+id/tvListDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Appointment in the clinic"
+                android:textAlignment="center"
+                android:textColor="@color/colorText1"
+                android:textSize="20sp"
+                android:paddingTop="14dp"
+                android:textStyle="normal"
+                android:drawableStart="@drawable/iconfragmentonline"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/choose_a_specialization"
+            android:textSize="14sp"
+            android:textColor="@color/gray1"/>
+        <Spinner
+            android:id="@+id/spSpecializareFizic"
+            style="@style/MySpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_border_sqr"
+            android:dropDownSpinnerStyle="@style/MySpinnerStyle"
+            android:paddingStart="30dp"
+            android:paddingEnd="10sp"
+            android:popupBackground="@color/white"
+            android:scrollbarSize="20dp"
+            android:scrollbarStyle="outsideInset"
+            android:spinnerMode="dropdown" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvConsultatieFizic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayoutConsultatieDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConsultatieFizicFragment" />
+
+</FrameLayout>

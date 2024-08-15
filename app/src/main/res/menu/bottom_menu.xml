@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_navigation"
+          android:title="@string/home_action_bar"
+          android:icon="@drawable/iconhomebutton"
+          android:iconTint="@color/alpha"
+          android:onClick="btnHome"
+          android:background="@drawable/bottom_nav_item_color"/>
+
+    <item android:id="@+id/notification_navigation"
+        android:title="@string/appointment"
+        android:icon="@drawable/baseline_schedule_24"
+        android:onClick="btnNotifications"
+        android:background="@drawable/bottom_nav_item_color"/>
+
+    <item android:id="@+id/book_navigation"
+        android:title="@string/news"
+        android:icon="@drawable/iconnews"
+        android:onClick="btnNews"
+        android:background="@drawable/bottom_nav_item_color"/>
+
+</menu>

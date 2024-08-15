@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Articole">
+
+    <EditText
+        android:id="@+id/etDoctorName"
+        android:layout_marginTop="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_sqr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/colorText"
+        android:hint="Nume Doctor" />
+
+    <EditText
+        android:id="@+id/etSpecialization"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorText"
+        android:background="@drawable/border_sqr"
+        android:layout_height="50dp"
+        android:layout_below="@id/etDoctorName"
+        android:hint="Specializare"/>
+
+    <EditText
+        android:id="@+id/etArticleLink"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_sqr"
+        android:layout_height="50dp"
+        android:textColor="@color/colorText"
+        android:layout_below="@id/etSpecialization"
+        android:hint="Link Articol" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etArticleLink"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="117dp"
+        android:gravity="center_vertical"
+        android:text="Selectează Imagine" />
+
+    <ImageView
+        android:id="@+id/ivSelectedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_below="@id/btnSelectImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="94dp"
+        android:layout_toStartOf="@+id/btnSelectImage"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSaveArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelectImage"
+        android:text="Salvează Articol"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

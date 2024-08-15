@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:longClickable="false"
+    tools:context=".StartPage"
+    tools:visibility="visible">
+
+
+   <ImageView
+       android:layout_width="410dp"
+       android:layout_height="660dp"
+       android:src="@drawable/startgreen"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.0"
+       android:contentDescription="@string/start_page"/>
+
+   <Button
+       android:id="@+id/btnStart"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:background="@drawable/custom_edit"
+       android:backgroundTint="#8fe4aa"
+       android:text="@string/get_started"
+       android:textColor="@color/black"
+       android:textSize="15sp"
+       android:textStyle="normal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.495"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.848" />
+
+   <TextView
+       android:id="@+id/tvStart"
+       android:layout_width="250dp"
+       android:layout_height="55dp"
+       android:paddingTop="15dp"
+       android:text="@string/i_already_have_an_account"
+       android:textAlignment="center"
+       android:textColor="@color/colorText"
+       android:textSize="20sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.497"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.911" />
+
+   <TextView
+       android:id="@+id/tvSuntDoctor"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:drawableEnd="@drawable/baseline_euro_24"
+       android:paddingTop="5dp"
+       android:text="Sunt doctor"
+       android:textAlignment="center"
+       android:textColor="@color/colorText"
+       android:textSize="18sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.193"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/tvStart"
+       app:layout_constraintVertical_bias="0.529" />
+
+   <Button
+       android:id="@+id/addArticole"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:text="Articole"
+       android:textAlignment="center"
+       android:textColor="@color/colorText"
+       android:textSize="15sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.876"
+       app:layout_constraintStart_toEndOf="@+id/tvSuntDoctor"
+       app:layout_constraintTop_toBottomOf="@+id/tvStart"
+       app:layout_constraintVertical_bias="0.529" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ConsultatieOnlineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/alpha">
+
+            <TextView
+                android:id="@+id/tvListDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/online_consultation"
+                android:textAlignment="center"
+                android:textColor="@color/colorText1"
+                android:textSize="25sp"
+                android:paddingTop="14dp"
+                android:textStyle="normal"
+                android:drawableStart="@drawable/iconfragmentonline"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/choose_a_specialization"
+            android:textSize="14sp"
+            android:textColor="@color/gray1"/>
+
+        <Spinner
+            android:id="@+id/spCautaSpecializarea"
+            style="@style/MySpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_border_sqr"
+            android:dropDownSpinnerStyle="@style/MySpinnerStyle"
+            android:paddingStart="30dp"
+            android:paddingEnd="10sp"
+            android:popupBackground="@color/white"
+            android:scrollbarSize="20dp"
+            android:scrollbarStyle="outsideInset"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/choose_a_doctor"
+            android:textSize="14sp"
+            android:textColor="@color/gray1"/>
+
+        <Spinner
+            android:id="@+id/spCautaDoctor"
+            style="@style/MySpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_border_sqr"
+            android:dropDownSpinnerStyle="@style/MySpinnerStyle"
+            android:paddingStart="30dp"
+            android:paddingEnd="10dp"
+            android:popupBackground="@color/white"
+            android:scrollbarSize="20dp"
+            android:scrollbarStyle="outsideInset"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/medical_program"
+            android:textSize="14sp"
+            android:textColor="@color/gray1"/>
+
+        <TextView
+            android:id="@+id/tvProgramMedic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="3sp"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/profile_doctor"
+            android:textSize="14sp"
+            android:textColor="@color/gray1"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:backgroundTint="@color/white">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvDoctorOnlineC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/green"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgDoctorOnlineC"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5sp"
+                                    android:src="@drawable/iconprofilegray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvNameOnlineC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="30dp"
+                                        android:layout_marginTop="15dp"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvSpecializationOnline"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="30dp"
+                                        android:layout_marginTop="4dp"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="17dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:text="@string/date"
+                                android:textSize="16sp"
+                                android:textColor="@color/gray1"/>
+                            <Spinner
+                                android:id="@+id/spMonths"
+                                style="@style/MySpinnerStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="25dp"
+                                android:dropDownSpinnerStyle="@style/MySpinnerStyle"
+                                android:paddingStart="30dp"
+                                android:paddingEnd="10dp"
+                                android:popupBackground="@color/white"
+                                android:scrollbarSize="20dp"
+                                android:scrollbarStyle="outsideInset"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvDates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:paddingBottom="30dp"
+                            android:background="@color/white"
+                            android:backgroundTint="@color/alpha" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="@string/time"
+                            android:textSize="16sp"
+                            android:textColor="@color/gray1"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:paddingBottom="30dp"
+                            android:background="@color/white"
+                            android:backgroundTint="@color/white" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="17dp"
+                            android:text="@string/choose_one"
+                            android:textSize="16sp"
+                            android:textColor="@color/gray1"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupOnline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4sp"
+                            android:drawablePadding="8dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/radioBtnConsultatie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:text="@string/consultation"
+                                android:textSize="18sp"
+                                android:textColor="#2d4334"
+                                android:padding="7sp"/>
+
+                            <RadioButton
+                                android:id="@+id/radioBtnControl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:text="@string/control"
+                                android:textSize="18sp"
+                                android:textColor="#2d4334"
+                                android:padding="7sp"/>
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="12dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total"
+                                    android:textSize="20sp"
+                                    android:layout_marginTop="9dp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tvPretTotal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black"
+                                    android:drawableEnd="@drawable/baseline_euro_24" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnScheduleYourself"
+                                android:layout_width="220dp"
+                                android:layout_height="50dp"
+                                android:text="@string/schedule_yourself"
+                                android:textSize="15sp"
+                                android:paddingTop="9dp"
+                                android:textAlignment="center"
+                                android:layout_marginStart="60dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/custom_border_sqr"
+                                android:backgroundTint="@color/green2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="60dp"
+    android:layout_height="90dp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp"
+    android:background="@color/alpha"
+    android:paddingBottom="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/alpha"
+          android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDaysOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Tue"
+                android:textColor="@color/gray1"
+                android:textSize="17dp"
+                android:textStyle="normal"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="12"
+                android:textColor="@color/colorText"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                android:textAlignment="center"/>
+      </LinearLayout>
+</androidx.cardview.widget.CardView>
